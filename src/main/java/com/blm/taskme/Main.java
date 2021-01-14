@@ -13,13 +13,10 @@ import java.util.Arrays;
 public class Main{
     public static void main(String[] args) throws IOException {
         //SpringApplication.run(Main.class, args);
-        CSVReader reader = new CSVReader(new FileReader("src/main/resources/service_a_import.csv"), ',' , '"' , 1);
+        CSVReader reader = new CSVReader(new FileReader("src/main/resources/service_a_import.csv"), ';' , '\'', '/');
         String[] nextLine;
         while ((nextLine = reader.readNext()) != null) {
-            if (nextLine != null) {
-                //Verifying the read data here
-                System.out.println(Arrays.toString(nextLine));
-            }
+            System.out.println(Arrays.toString(nextLine));
         }
     }
 }
