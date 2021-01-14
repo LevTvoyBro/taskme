@@ -1,0 +1,46 @@
+2021-01-08 20:32:13.323  INFO 16588 --- [main] com.blm.taskme.Main                      : Starting Main on DESKTOP-5IHV03R with PID 16588 (E:\taskme\target\classes started by Lev in E:\taskme)
+2021-01-08 20:32:13.326  INFO 16588 --- [main] com.blm.taskme.Main                      : No active profile set, falling back to default profiles: default
+2021-01-08 20:32:14.308  INFO 16588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-01-08 20:32:14.392  INFO 16588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 2 JPA repository interfaces.
+2021-01-08 20:32:14.834  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-08 20:32:15.201  INFO 16588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-01-08 20:32:15.211  INFO 16588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-08 20:32:15.211  INFO 16588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-01-08 20:32:15.339  INFO 16588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-08 20:32:15.339  INFO 16588 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1932 ms
+2021-01-08 20:32:15.461  INFO 16588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-08 20:32:15.607  INFO 16588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-08 20:32:16.492  INFO 16588 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM task4.DATABASECHANGELOGLOCK
+2021-01-08 20:32:16.498  INFO 16588 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM task4.DATABASECHANGELOGLOCK
+2021-01-08 20:32:16.500  INFO 16588 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM task4.DATABASECHANGELOGLOCK WHERE ID=1
+2021-01-08 20:32:16.548  INFO 16588 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2021-01-08 20:32:17.382  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_27__create_table_users.xml
+2021-01-08 20:32:17.410  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_28__create_table_roles.xml
+2021-01-08 20:32:17.425  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_29__V2__create_table_boards.xml
+2021-01-08 20:32:17.438  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_29__V3__create_table_permissions.xml
+2021-01-08 20:32:17.448  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_29__V4__create_table_tasks.xml
+2021-01-08 20:32:17.457  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_29__V5__create_table_roles_permissions.xml
+2021-01-08 20:32:17.466  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_29__create_table_users_roles.xml
+2021-01-08 20:32:17.474  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_30__V2__create_table_boards_tasks.xml
+2021-01-08 20:32:17.482  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2020_12_30__create_table_users_boards.xml
+2021-01-08 20:32:17.490  INFO 16588 --- [main] liquibase.changelog.DatabaseChangeLog    : Reading resource: migrations/1.0/2021_01_08__insert_default_roles.xml
+2021-01-08 20:32:17.655  INFO 16588 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM task4.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2021-01-08 20:32:17.656  INFO 16588 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM task4.DATABASECHANGELOG
+2021-01-08 20:32:17.656  INFO 16588 --- [main] l.c.StandardChangeLogHistoryService      : Reading from task4.DATABASECHANGELOG
+2021-01-08 20:32:17.656  INFO 16588 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM task4.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2021-01-08 20:32:17.714  INFO 16588 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2021-01-08 20:32:17.715  INFO 16588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-08 20:32:17.718  INFO 16588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-08 20:32:17.796  INFO 16588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-08 20:32:17.862  INFO 16588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2021-01-08 20:32:17.987  INFO 16588 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-08 20:32:18.082  INFO 16588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-01-08 20:32:18.085  INFO 16588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-01-08 20:32:18.103  INFO 16588 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-01-08 20:32:18.865  INFO 16588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-08 20:32:18.872  INFO 16588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-08 20:32:19.205  WARN 16588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-08 20:32:19.691  INFO 16588 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23973547, org.springframework.security.web.context.SecurityContextPersistenceFilter@17e2ad13, org.springframework.security.web.header.HeaderWriterFilter@20183e2d, org.springframework.security.web.authentication.logout.LogoutFilter@739500b8, com.blm.taskme.security.filters.JwtAuthenticationFilter@4fcb796f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f4f198c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@144fc5fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ed4c822, org.springframework.security.web.session.SessionManagementFilter@3bd1c7f0, org.springframework.security.web.access.ExceptionTranslationFilter@4303511e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57f9f387]
+2021-01-08 20:32:19.801  INFO 16588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-08 20:32:20.244  INFO 16588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-01-08 20:32:20.245  INFO 16588 --- [main] com.blm.taskme.Main                      : Started Main in 7.439 seconds (JVM running for 7.913)
